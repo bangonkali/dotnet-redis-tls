@@ -1,0 +1,18 @@
+### Set a key-value pair in Redis
+# This request sends a JSON payload to the /set endpoint.
+# The API will then store this key and value in the Redis database.
+POST http://localhost:8080/set
+Content-Type: application/json
+
+{
+  "key": "from-rider",
+  "value": "it-works!"
+}
+
+###
+# Separator for the next request
+
+### Get the value for the key set above
+# After running the POST request, you can run this GET request
+# to verify that the value was stored correctly.
+GET http://localhost:8080/get/from-rider

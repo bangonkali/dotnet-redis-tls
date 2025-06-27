@@ -31,12 +31,12 @@ services:
     environment:
       # Pass Redis connection details to the API as environment variables
       - ASPNETCORE_URLS=http://+:8080;https://+:8081
-      - REDIS_HOST=redis-tls-server
+      - REDIS_HOST=172.16.0.4
       - REDIS_PASSWORD=some_complex_password
       - Kestrel__Certificates__Default__Path=/app/certs/aspnetapp.pfx
       - Kestrel__Certificates__Default__Password=password
     volumes:
-       # Mount the certificates into the ASP.NET application container
+        # Mount the certificates into the ASP.NET application container
       - ./certs:/app/certs
     networks:
       - redis-net

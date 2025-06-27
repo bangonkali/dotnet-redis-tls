@@ -38,4 +38,6 @@ docker build -f redis/Dockerfile -t redis-tls-server --no-cache .
 docker build -f src/Dockerfile -t redis-tls-aspnet --no-cache .
 
 docker compose up -d --force-recreate --build
+
+curl https://localhost:62271/set/some?value=value
 ```

@@ -2,9 +2,11 @@
   "profiles": {
     "redis-aspnet-core-sample": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "REDIS_PASSWORD": "some_complex_password",
+        "REDIS_HOST": "localhost:6379"
       },
       "applicationUrl": "https://localhost:62271;http://localhost:62272"
     }
