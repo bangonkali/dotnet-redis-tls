@@ -1,0 +1,11 @@
+﻿.git
+**/*Dockerfile*
+**/*docker-composee*
+**/node_modules
+**/Build
+**/Debug
+**/Release
+**/.venv
+**/.scratch
+**/dist
+**/*.pyc
